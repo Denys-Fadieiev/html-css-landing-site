@@ -1,8 +1,8 @@
 :root {
-  --accent-color: #34547A;
+  --blue-color: #34547A;
   --text-color: #727272;
   --heading-color: #000000;
-  --btn-text-color: #ffffff;
+  --white-text-color: #ffffff;
   --light-gray-bg-color: #EEEFF1;
   --progress-bg-color: #C4C4C4;
 
@@ -33,9 +33,15 @@
   line-height: 1.65;
   letter-spacing: 10%;
   padding: 25px 41px;
-  color: var(--btn-text-color);
-  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  background-color: var(--blue-color);
   border: 0;
+}
+
+.btn:hover, .btn:focus {
+  color: var(--heading-color);
+  background-color: var(--light-gray-bg-color);
+  border: solid 1px black;
 }
 
 .img {
@@ -45,6 +51,22 @@
 
 .justify-center {
   justify-content: center;
+}
+
+.bg-lite-gray{
+  background-color: var(--light-gray-bg-color);
+}
+
+.white{
+  color: var(--white-text-color);
+}
+
+.bg-blue{
+  background: var(--blue-color);
+}
+
+.heading-margin {
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 576px) {
